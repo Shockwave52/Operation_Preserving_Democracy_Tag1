@@ -6,6 +6,7 @@
 * @Arguments: -
 * @Return: -
 */
+diag_log "SWM_fnc_heliCrashFailSafe ausgeführt";
 
 sleep 3;
 Heli setDamage 0; 
