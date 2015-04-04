@@ -1,6 +1,19 @@
 ToDo:
 ======
--Testing
+-redo mission
 -finess SAM-Strike script!
 -multiplayer radios
 -eventhandler locality
+-Testing
+-Briefing -> playerlocal
+
+
+things:
+missionNamespace setVariable ["myName", "KK"];
+
+varName addPublicVariableEventHandler code 
+"publicThis" addPublicVariableEventHandler { hint format [ "%1 has been updated to: %2", _this select 0, _this select 1 ] };
+
+myPubVar = [123, "456", true]; publicVariable "myPubVar";
+
+missionNamespace getVariable "myMissionVar";//Returns 2015

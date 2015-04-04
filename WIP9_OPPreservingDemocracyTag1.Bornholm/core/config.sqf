@@ -51,14 +51,12 @@ edn_fortification_array = [
 	["Camping Chair","Land_CampingChair_V2_F","\edn_fortification\images\Land_CampingChair_V2_F.paa",[["edn_Metalpipe",2,"Aluminium pipe"]],true,false]
 ];
 
-SWM_everyUnit = [TL,Grenadier,MG,Medic,Engineer,Schu1,Schu2,Pilot,WSO];
-SWM_QRFUnits = [TL,Grenadier,MG,Medic,Engineer,Schu1,Schu2];
-SWM_flightUnits = [Pilot,WSO];
-
 SWM_aiSkill = 0.25;
 SWM_missionTriggerVariable = false;
+SWM_samLocs = ["sam1", "sam2", "sam3"];
 
-//form: [["markername","vehilceType", vehicleDirection]] /for infantryspawns type ="" and direction = 0
+
+//form: [["markername","vehilceType", vehicleDirection]]
 SWM_roadblockMarkersVeh = [
 ["s1Block1veh1_dir280", "C_Hatchback_01_F", 280],
 ["s1Block1veh2_dir180", "C_SUV_01_F", 180],

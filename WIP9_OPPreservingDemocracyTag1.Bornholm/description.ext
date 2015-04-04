@@ -2,7 +2,6 @@ class header {
 	gametype = COOP;
 	minplayers = 2;
 	maxplayers = 12;
-	playerCountMultipleOf = 1;  //Coop type missions use 1, Team type missions use 2
 };
 
 class CfgFunctions
@@ -57,10 +56,8 @@ onLoadMissionTime = true;
 onLoadName = "TEST Preserving Freedom T1";
 
 briefing = 1;
-debriefing = 0;
+debriefing = 1;
 respawn = 1;
-//respawnDelay = 10;
-//RespawnDialog = 0;
 disabledAI = 1;
 enableDebugConsole = 1;
 allowFunctionsRecompile = 1;
