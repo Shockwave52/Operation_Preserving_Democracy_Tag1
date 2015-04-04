@@ -1,0 +1,36 @@
+comment "Exported from Arsenal by OLt. Shockwave";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "U_PMC_RedPlaidShirt_DenimCords";
+this addItemToUniform "AGM_EarBuds";
+for "_i" from 1 to 5 do {this addItemToUniform "AGM_Bandage";};
+this addItemToUniform "AGM_Morphine";
+for "_i" from 1 to 2 do {this addItemToUniform "30Rnd_9x21_Mag";};
+this addVest "V_Rangemaster_belt";
+this addItemToVest "16Rnd_9x21_Mag";
+for "_i" from 1 to 3 do {this addItemToVest "rhs_VOG25";};
+for "_i" from 1 to 2 do {this addItemToVest "30Rnd_9x21_Mag";};
+
+comment "Add weapons";
+this addWeapon "SMG_02_F";
+this addWeapon "hgun_Rook40_F";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadioAcreFlagged";
+
+comment "Set identity";
+this setFace "WhiteHead_08";
+this setSpeaker "AGM_NoVoice";
