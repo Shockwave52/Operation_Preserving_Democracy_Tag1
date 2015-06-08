@@ -1,0 +1,95 @@
+class header {
+	gametype = COOP;
+	minplayers = 2;
+	maxplayers = 18;
+};
+
+author = "OLt. Shockwave [=TAS=]";
+onLoadMission = "Operation Preserving Democracy";
+onLoadIntroTime = true;
+onLoadMissionTime = true;
+onLoadName = "Tag 1";
+
+overviewPicture = "data\Load.paa";
+
+briefing = 1;
+debriefing = 1;
+respawn = 1;
+disabledAI = 1;
+enableDebugConsole = 1;
+allowFunctionsRecompile = 1;
+disableChannels[]={0,1,2,5,6};
+
+class CfgFunctions
+{
+	#include "CfgFunctions.hpp"	
+	#include "mission\CfgFunctions.hpp"
+	
+	#include "addons\tdc_gui\Functions.hpp"
+	#include "addons\Base\CfgFunctions.hpp"	
+	
+	#include "enemy\CfgFunctions.hpp"
+	
+	#include "taw_vd\CfgFunctions.hpp"
+};
+
+class Params
+{
+	class AISkill
+	{
+		title = "AI Skill"; 
+		values[] = {2,5,7,9}; 
+		texts[] = {"Recruit","Regular","Experienced","Veteran"}; 
+		default = 5; 
+	};
+};
+
+class CfgDebriefing
+{  
+	class End1
+	{
+		title = "Mission gescheitert";
+		subtitle = "Die Piloten sind tot";
+		description = "Die Piloten wurden nicht rechtzeitig gerettet und sind den Rebellen zu Opfer gefallen.";
+		pictureBackground = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class End2
+	{
+		title = "Mission abgeschlossen";
+		subtitle = "Die Piloten wurden gerettet";
+		description = "Die Piloten trotz des Absturzes nach einem SAM-Angriff sicher in der Basis";
+		pictureBackground = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class End3
+	{
+		title = "Mission abgeschlossen";
+		subtitle = "Ein Pilot wurde gerettet";
+		description = "Wir konnten leider nur einen Piloten nach einem SAM-Angriff vor den Rebellen retten.";
+		pictureBackground = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+	
+	class End4
+	{
+		title = "Mission gescheitert";
+		subtitle = "QRF oder Patrouillenflug nicht besetzt";
+		description = "Mission konnte nicht ausgeführt werden da die QRF oder der Patrouillenflug nicht besetzt war";
+		pictureBackground = "";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+};
+	
+#include "defines.hpp"
+#include "taw_vd\dialog.hpp"
+
+class RscTitles
+{
+	#include "addons\tdc_gui\RscTitles.hpp"
+};
+
+//#include "addons\Logistik\defines.hpp"
+#include "addons\Logistik\dialogs.hpp"

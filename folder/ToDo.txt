@@ -1,0 +1,8 @@
+ToDo:
+======
+-multiplayer radios ->test
+-eventhandler locality ->test
+-Testing
+
+things:
+player onMapSingleClick "player setPos _pos",
