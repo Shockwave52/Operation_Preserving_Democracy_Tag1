@@ -1,9 +1,0 @@
-// 	Default Gear 
-// 	deaktiveren:	TDC_defaultChar = false;
-// 	Format: 		
-//	Uniformen, Vesten, Backpacks: 
-//					false (nicht beachten); [loeschen,neu setzen] wenn neu setzen auf false, dann wird nichts dafuer ersetzt
-//	Items: 			[Itemclass, assignItem: true/false]
-//	Vorlagen
-// 	BWMOD: 			TDC_defaultChar = [false,false,[true,false],false,false,false,[true,false],[true,false],[["ItemMap",true],["ItemCompass",true],["ItemWatch",true]]];
-// 	US: 			TDC_defaultChar = [[true,"U_mas_usr_B_IndUniform1_d"],[true,"V_mas_usr_PlateCarrierGL_rgr_d"],[false,true],false,false,false,[true,"H_mas_usr_off_d"],[true,false],[["ItemMap",true],["ItemCompass",true],["ItemWatch",true]]];

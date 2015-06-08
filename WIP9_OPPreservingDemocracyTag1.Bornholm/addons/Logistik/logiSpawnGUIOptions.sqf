@@ -1,1 +1,0 @@
-(_this select 0) addAction ["<t color=""#00c136"">Spawn Menu</t>", "null = createDialog ""Logispawn_dialog"";"];
